@@ -57,10 +57,11 @@ sniff(prn=packet_callback, store=0, count=10)
 📌 **Output Example**
 
 ```text
-📡 Packet Captured: IP 192.168.1.10:51191 > 20.57.103.21:443
-🔹 Source IP: 192.168.1.10 → Destination IP: 20.57.103.21
-🔸 Source Port: 51191 → Destination Port: 443
-🔒 This is an HTTPS Request!
+📡 Packet Captured: Ether / IP / TCP 192.168.29.182:58599 > 52.168.117.174:https A / Raw
+🔹 Source IP: 192.168.29.182 -> Destination IP: 52.168.117.174
+🔸 Source Port: 58599 -> Destination Port: 443
+🔒 This is an HTTPS Request/Response!
+
 --------------------------------------------------
 🔥 Advanced Usage
 ```
@@ -69,6 +70,9 @@ To capture unlimited packets, remove the count=10 parameter:
 ```python
 sniff(prn=packet_callback, store=0)
 ```
+![image](https://github.com/user-attachments/assets/35ee93d8-1ec5-4029-8c0f-3e2c9913a21a)
+
+
 📜 **License**
 
 This project is open-source and available under the MIT License.
